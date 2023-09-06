@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de hidratación</title>
+</head>
+<body>
+    <h1>Hidratación Basal</h1>
+    <label for="peso">Peso en kg:</label>
+    <input type="number" id="peso" placeholder="Ingrese su peso en kg">
+    <button onclick="calcularHidratacion()">Calcular</button>
+    
+    <h2>¿Cómo se calcula?</h2>
+    <ul>
+        <li>De 0 kg a 10 kg, se calcula 100 ml por cada kilo.</li>
+        <li>Se suman 50 ml por cada kilo de peso por encima de 10 kg, hasta 20 kg.</li>
+        <li>De 20 kg para arriba, se suman 20 ml por cada kilo adicional.</li>
+    </ul>
+
+    <p id="resultado"></p>
+</body>
+</html>
