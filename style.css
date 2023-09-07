@@ -40,6 +40,7 @@ padding: 1rem;
 .info-childs h2 {
     font-size: 1.5rem;
     font-weight: 600;
+    color: #2d228f;
 }
 .btn{
     border-radius: 20px;
@@ -56,6 +57,7 @@ padding: 1rem;
     padding: 1rem;
 }
 .form-peso-childs h2{
+font-size: 1.5rem;
 font-weight: 600;
 color: white;
 }
