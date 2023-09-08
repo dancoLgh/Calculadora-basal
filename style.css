@@ -51,7 +51,7 @@ body {
 .form-peso {
   width: 40%;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   text-align: center;
   border-radius: 0px 20px 20px 0px;
@@ -75,4 +75,16 @@ body {
   );
   border: none;
   font-weight: 500;
+}
+#resultados {
+  visibility: hidden;
+}
+#under-30-info {
+  display: none;
+}
+#over-30-info {
+  display: none;
+}
+.alert {
+  font-weight: 600;
 }

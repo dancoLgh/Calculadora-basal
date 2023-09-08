@@ -30,8 +30,14 @@
           <h2 class="mt-2">Bienvenido a tu calculadora Basal</h2>
           <h5>¿Como se calcula?</h5>
 
+          <!-- ========== Start  Sin peso ========== -->
+          <p id="info-sin-peso">
+            Segun el peso del pacienste se hacen diferentes calculos
+          </p>
+          <!-- ========== End    Sin peso ========== -->
+
           <!-- ========== Start  Holliday-Segar ========== -->
-          <ul class="list-group" id="under-30">
+          <ul class="list-group" id="under-30-info">
             <li class="list-group-item list-group-item-info">
               Se utilizo el metodo de <b> Holliday-Segar</b>
             </li>
@@ -48,7 +54,7 @@
           <!-- ========== End  Holliday-Segar ================= -->
 
           <!-- ========== Start  Superficie corporal ========== -->
-          <ul class="list-group" id="over-30" style="display: none">
+          <ul class="list-group" id="over-30-info">
             <li class="list-group-item list-group-item-info">
               Se utilizo el metodo de <b> Superficie corporal</b>
             </li>
@@ -64,7 +70,11 @@
           </ul>
           <!-- ========== End  Superficie corporal ========== -->
 
-          <button type="button" class="btn btn-outline-primary mt-4">
+          <button
+            type="button"
+            id="reiniciar"
+            class="btn btn-outline-primary mt-4"
+          >
             Reiniciar
           </button>
         </div>
@@ -75,33 +85,23 @@
           <form class="form-floating">
             <input
               type="number"
-              class="form-control"
-              id="peso"
+              class="form-control mb-3"
+              id="pesoInput"
               placeholder=""
               value=""
             />
             <label for="peso">Peso en Kg </label>
-            <input
-              type="submit"
-              class="btn btn-success my-2"
-              value="Calcular"
-            />
           </form>
-          <div class="resultaddos">
-            <div class="alert alert-primary" role="alert">
-              <b>1680 cc </b>
-            </div>
-            <div class="alert alert-primary" role="alert">
-              <b>70 cc/hr</b>
-            </div>
-            <div class="alert alert-warning" role="alert">
-              <b>105 cc/hr</b>
-            </div>
+          <div id="resultados">
+            <div class="alert alert-primary" role="alert" id="hd-diario">0</div>
+            <div class="alert alert-primary" role="alert" id="hd-hora">0</div>
+            <div class="alert alert-warning" role="alert" id="hd-m/2">0</div>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script src="calculadora.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
