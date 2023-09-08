@@ -23,62 +23,127 @@
     <title>Calculadora de hidratación</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="container-form">
       <div class="info">
         <div class="info-childs">
-          <h2 class="mt-2">Bienvenido a tu calculadora Basal</h2>
-          <h5>¿Como se calcula?</h5>
+          <div>
+            <h2 class="mt-2">Bienvenido a tu calculadora Basal</h2>
+            <h5>¿Como se calcula?</h5>
+          </div>
+          <div class="info-onload">
+            <div>
+              <!-- ========== Start  Holliday-Segar ========== -->
+              <ul class="list-group" id="under-30-info">
+                <li class="list-group-item list-group-item-info">
+                  Se utilizo el metodo de <b> Holliday-Segar</b>
+                </li>
+                <li class="list-group-item">
+                  De 0kg a 10kg, se calcula 100cc por cada kilo.
+                </li>
+                <li class="list-group-item">
+                  Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta
+                  20kg
+                </li>
+                <li class="list-group-item">
+                  De 20kg para arriba, se suman 20cc por cada kilo adicional
+                </li>
+              </ul>
+            </div>
+            <!-- ========== End  Holliday-Segar ================= -->
 
-          <!-- ========== Start  Sin peso ========== -->
-          <p id="info-sin-peso">
-            Segun el peso del pacienste se hacen diferentes calculos
-          </p>
-          <!-- ========== End    Sin peso ========== -->
+            <div>
+              <!-- ========== Start  Superficie corporal ========== -->
+              <ul class="list-group" id="over-30-info">
+                <li class="list-group-item list-group-item-info">
+                  Se utilizo el metodo de <b> Superficie corporal</b>
+                </li>
+                <li class="list-group-item">
+                  La SC se calcula (<b id="info-peso">Peso</b> x 4)+7) / (<b
+                    id="info-peso2"
+                    >Peso</b
+                  >
+                  + 900)
+                </li>
+                <li class="list-group-item">
+                  Este resultado de SC se multiplica por <b>1500</b> y por
+                  <b>2000</b>
+                  para hallar el valor del volumen diario en cc, y el medico
+                  decide cual de los dos resultados utilizar
+                </li>
+              </ul>
+            </div>
+            <!-- ========== End  Superficie corporal ========== -->
+            <div>
+              <!-- ========== Start  Sin peso ========== -->
+              <p id="info-sin-peso">
+                La hidratación basal es la cantidad de líquidos que una persona
+                requiere en 24 horas para mantener una hidratación de
+                mantenimiento, que es lo que mantiene el medio interno del
+                organismo y permite que el resto de los sistemas funcionen
+                <br />
+                <b>Segun el peso del pacienste se hacen diferentes calculos</b>
+              </p>
+              <!-- ========== End    Sin peso ========== -->
+            </div>
+          </div>
 
-          <!-- ========== Start  Holliday-Segar ========== -->
-          <ul class="list-group" id="under-30-info">
-            <li class="list-group-item list-group-item-info">
-              Se utilizo el metodo de <b> Holliday-Segar</b>
-            </li>
-            <li class="list-group-item">
-              De 0kg a 10kg, se calcula 100cc por cada kilo.
-            </li>
-            <li class="list-group-item">
-              Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg
-            </li>
-            <li class="list-group-item">
-              De 20kg para arriba, se suman 20cc por cada kilo adicional
-            </li>
-          </ul>
-          <!-- ========== End  Holliday-Segar ================= -->
+          <div>
+            <h5>Unidades de Medida</h5>
+            <div
+              class="btn-group"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="cc"
+                autocomplete="off"
+                checked
+              />
+              <label class="btn btn-outline-primary" for="cc">cc</label>
 
-          <!-- ========== Start  Superficie corporal ========== -->
-          <ul class="list-group" id="over-30-info">
-            <li class="list-group-item list-group-item-info">
-              Se utilizo el metodo de <b> Superficie corporal</b>
-            </li>
-            <li class="list-group-item">
-              La SC se calcula ($peso x 4)+7) / ($peso + 900)
-            </li>
-            <li class="list-group-item">
-              Este resultado de SC se multiplica por <b>1500</b> y por
-              <b>2000</b>
-              para hallar el valor del volumen diario en cc, y el medico decide
-              cual de los dos resultados utilizar
-            </li>
-          </ul>
-          <!-- ========== End  Superficie corporal ========== -->
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="ml"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary" for="ml">ml</label>
+            </div>
 
-          <button
-            type="button"
-            id="reiniciar"
-            class="btn btn-outline-primary mt-4"
-          >
-            Reiniciar
-          </button>
+            <div
+              class="btn-group"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check"
+                name="unidadMedida"
+                id="kg"
+                autocomplete="off"
+                checked
+              />
+              <label class="btn btn-outline-primary" for="kg">kg</label>
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="unidadMedida"
+                id="lb"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary" for="lb">Lb</label>
+            </div>
+          </div>
         </div>
       </div>
+
       <div class="form-peso">
         <div class="form-peso-childs">
           <h2>Ingrese el Peso</h2>
@@ -90,12 +155,12 @@
               placeholder=""
               value=""
             />
-            <label for="peso">Peso en Kg </label>
+            <label id="label-peso" for="pesoInput">Peso en Kg </label>
           </form>
           <div id="resultados">
-            <div class="alert alert-primary" role="alert" id="hd-diario">0</div>
-            <div class="alert alert-primary" role="alert" id="hd-hora">0</div>
-            <div class="alert alert-warning" role="alert" id="hd-m/2">0</div>
+            <div class="alert alert-primary" role="alert" id="hd-diario">-</div>
+            <div class="alert alert-primary" role="alert" id="hd-hora">-</div>
+            <div class="alert alert-warning" role="alert" id="hd-m/2">-</div>
           </div>
         </div>
       </div>
