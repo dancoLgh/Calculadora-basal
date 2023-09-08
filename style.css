@@ -61,6 +61,7 @@ body {
   justify-content: center;
   text-align: center;
   border-radius: 0px 20px 20px 0px;
+  background-color: rgba(0, 0, 0, 0.099);
 }
 
 .form-peso-childs {
