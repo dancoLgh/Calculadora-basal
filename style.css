@@ -1,68 +1,78 @@
-*{
-    padding: O;
-    margin: O;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+* {
+  padding: O;
+  margin: O;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
-body{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-image: radial-gradient(circle, #0064f9, #314bca, #36349e, #301f75, #240c4f);
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: radial-gradient(
+    circle,
+    #0064f9,
+    #314bca,
+    #36349e,
+    #301f75,
+    #240c4f
+  );
 }
-.container-form{
-
-    margin: 2rem;
-    border-radius: 20px;
-    box-shadow: 1px 5px 23px 1px rgba(255,255,255,0.1);
-    max-width: 900px;
-    height: auto;
-
-    transition: all 1s ease;
-    display: flex;
+.container-form {
+  margin: 2rem;
+  border-radius: 20px;
+  box-shadow: 1px 5px 23px 1px rgba(255, 255, 255, 0.1);
+  max-width: 900px;
+  height: auto;
+  transition: all 1s ease;
+  display: flex;
 }
-.info{
-
-    width: 60%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background-color: #ffffff;
-    border-radius: 20px 0px 0px 20px;
+.info {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 20px 0px 0px 20px;
 }
-.info-childs{
-width: 100%;
-padding: auto;
-padding: 1rem;
+.info-childs {
+  width: 100%;
+  padding: auto;
+  padding: 1rem;
 }
 .info-childs h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #2d228f;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d228f;
 }
-.btn{
-    border-radius: 20px;
+.btn {
+  border-radius: 20px;
 }
-.form-peso{
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 0px 20px 20px 0px;
+.form-peso {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0px 20px 20px 0px;
 }
-.form-peso-childs{
-    padding: 1rem;
+.form-peso-childs {
+  padding: 1rem;
 }
-.form-peso-childs h2{
-font-size: 1.5rem;
-font-weight: 600;
-color: white;
+.form-peso-childs h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
 }
-.btn-success{ 
-    background-image: linear-gradient(to left top, #153a72, #0c3986, #183698, #302fa7, #4c20b3);
-    border:none;
-    font-weight: 500;
+.btn-success {
+  background-image: linear-gradient(
+    to left top,
+    #153a72,
+    #0c3986,
+    #183698,
+    #302fa7,
+    #4c20b3
+  );
+  border: none;
+  font-weight: 500;
 }
