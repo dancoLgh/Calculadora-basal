@@ -27,6 +27,15 @@ body {
   display: flex;
 }
 
+@media (max-width: 800px) {
+  .container-form {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0rem;
+  }
+}
+
 .info {
   width: 60%;
   display: flex;
@@ -34,6 +43,14 @@ body {
   text-align: center;
   background-color: #ffffff;
   border-radius: 20px 0px 0px 20px;
+}
+
+@media (max-width: 800px) {
+  .info {
+    height: 100%;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+  }
 }
 
 .info-childs {
@@ -50,6 +67,7 @@ body {
   color: #2d228f;
 }
 
+
 .btn {
   border-radius: 20px;
 }
@@ -64,6 +82,13 @@ body {
   background-color: rgba(0, 0, 0, 0.099);
 }
 
+@media (max-width: 800px) {
+  .form-peso {
+    height: auto;
+    width: auto;
+  }
+}
+
 .form-peso-childs {
   padding: 1rem;
   width: 85%;
@@ -73,6 +98,15 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   color: white;
+}
+
+@media (max-width: 800px) {
+  .form-peso-childs h2 {
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin-top: 1rem;
+
+  }
 }
 
 .btn-success {
@@ -109,4 +143,13 @@ body {
   flex-wrap: nowrap;
   flex-direction: column;
   margin-top: 2rem;
+}
+
+@media (max-width: 800px) {
+  .info-onload {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    margin-top: 0.5rem;
+  }
 }
