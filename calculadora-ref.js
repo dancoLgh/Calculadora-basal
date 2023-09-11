@@ -64,6 +64,9 @@ function print_hd_SC(
   const e = get_elements();
 
   e.hd_diario.innerHTML = `<div table-responsive>
+                              <span class="position-absolute top-0 start-40 translate-middle badge rounded-pill bg-primary">
+                              <small>Volumen diario</small> 
+                              </span>
                                   <table class="table  table-sm">
                                     <thead>
                                       <tr>
@@ -81,6 +84,9 @@ function print_hd_SC(
                                 </div>
 `;
   e.hd_hora.innerHTML = `<table class="table">
+                                <span class="position-absolute top-0 start-40 translate-middle badge rounded-pill bg-primary">
+                                <small>Mantenimiento</small> 
+                                </span>
                                 <thead>
                                   <tr>
                                     <th scope="col">1500 ${unidad_v}</th>
@@ -96,6 +102,9 @@ function print_hd_SC(
                               </table>
 `;
   e.hd_m2m.innerHTML = `<table class="table">
+                            <span class="position-absolute top-0 start-40 translate-middle badge rounded-pill bg-primary">
+                            <small>m+m/2</small> 
+                            </span>
                               <thead>
                                 <tr>
                                   <th scope="col">1500 ${unidad_v}</th>
