@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log(valorPeso);
 
       sc = (valorPeso * 4 + 7) / (valorPeso + 90);
-
+      console.log(sc);
       hd = (sc * 1500).toFixed(2);
       hd_mant = (hd / 24).toFixed(2);
       hd_m2 = (hd_mant * 1.5).toFixed(2);
