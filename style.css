@@ -23,7 +23,7 @@ body {
   border-radius: 20px;
   box-shadow: 1px 5px 23px 1px rgba(255, 255, 255, 0.1);
   width: 900px;
-  height: 510px;
+  height: 540px;
   display: flex;
 }
 
@@ -141,4 +141,12 @@ body {
     width: auto;
     margin-top: 0.5rem;
   }
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  font-size: 12px;
 }
